@@ -1,0 +1,251 @@
+body {
+    background-color: #fafafa;
+    flex-wrap: wrap;
+
+}
+
+
+.nav-wrapper {
+    background-color: #ffff;
+}
+
+.insta-icon {
+    font-size: 2rem;
+    
+}
+
+.instagram {
+    font-size: 2rem;
+    font-family: 'Lobster', cursive;
+    color: black;
+
+}
+
+
+.search-bar  {
+    margin: 0;
+    margin-left: 10.625rem;
+    height: 1.938rem;
+    width: 13.75rem;
+    border-radius: 0.313rem;
+    background-color: #fafafa;
+    text-align: center;
+}
+
+.nav-icons {
+    display: inline-block;
+    float: left;
+    font-size: 1.8rem;
+    color:  black;
+    
+}
+
+.nav-icons:hover {
+    font-size: 1.7rem;
+    color:  black;
+    text-decoration: none;
+    
+}
+
+.card {
+    height: 54.063rem;
+    width: 38.438rem;
+}
+
+.card-img {
+    height: 36.25rem;
+    width: 36.25rem;
+    
+}
+
+.page-img {
+    border-radius: 2.5rem;
+
+}
+
+.page-name {
+    margin: 0;
+    margin-left: 0.313rem;
+    text-decoration: none;
+    color: black;
+    font-size: 1.3rem;
+}
+
+.card-title {
+    margin: 0;
+    margin-left: 0.5rem;
+}
+
+.minutes {
+    font-size: 0.625rem;
+}
+
+.comment {
+    border: 1px solid black;
+    text-decoration: none;
+    border-style: none;
+    background: none;
+    height: 3rem;
+    width: 40rem;
+    outline: none;
+}
+.comment-section {
+    background-color: #ffff;
+    width: 38.438rem;
+    margin: 0;
+    margin-left: 0px;
+    height: 3rem;
+    border: 1px solid #e6e6e6; 
+
+}
+
+.card-div {
+    margin: 0;
+    margin-top: 3.813rem;
+}
+
+
+/** estilos navbar */
+
+.container{
+    width: 95%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+header::after{
+    content: '';
+    clear: both;
+    display: block;
+    
+}
+.logo{
+    float: left;
+    font-size: 1rem;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.logo span{
+    font-weight: 300;
+}
+.site-nav{
+    top:10%;
+    right:0;
+    position: absolute;
+    background: #464655;
+    clip-path: circle(0px at top right);
+    transition: clip-path ease-in-out 700ms;
+    z-index: 1;
+}
+.site-nav-open{
+    clip-path: circle(150% at top right);
+}
+.site-nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.site-nav li{
+    border-bottom: 1px solid #575766;
+}
+.site-nav li:last-child{
+    border-bottom: none;
+    
+}
+.site-nav a{
+    color: black;
+    display: block;
+    padding: 2em 6em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.site-nav a:hover,
+.site-nav a:focus{
+    background: black;
+    color: black;
+    
+}
+
+.site-nav--icon{
+    display: inline-block;
+    font-size: 1.5em;
+    margin-right: 1em;
+    width: 1.1em;
+    text-align: right;
+    color: rgba(255, 255, 255, .4);
+}
+
+.menu-toggle{
+   
+    padding: 1em;
+    position: absolute;
+    top: .5em;
+    right: .5em;
+    
+}
+.menu-open .hamburger{
+    transform: rotate(45deg);
+}
+.menu-open .hamburger::before{
+    opacity: 0;
+    
+}
+.menu-open .hamburger::after{
+    transform: translateY(-3px) rotate(-90deg);
+    
+}
+.hamburger,
+.hamburger::before,
+.hamburger::after{
+    content: '';
+    display: block;
+    background: #ebebd3;
+    height: 3px;
+    width: 1.75em;
+    border-radius: 3px;
+    transition: all ease-in-out 500ms;
+    
+    
+}
+.hamburger::before{
+    transform: translateY(-6px);
+    
+}
+.hamburger::after{
+    transform: translateY(3px);
+    
+}
+
+@media (min-width:700px){
+  .menu-toggle{
+      display: none;
+  } 
+  .site-nav{
+      height: auto;
+      position: relative;
+      background: transparent;
+      float: right;
+      margin-right: 10px;
+      clip-path: initial;
+  } 
+  .site-nav li{
+      display: inline-block;
+      border: none;
+  }
+
+  .site-nav a{
+      padding: 0;
+      margin-left: 3em;
+  }
+  .site-nav--icon{
+      display: none;
+  }
+  .site-nav a:hover,
+  .site-nav a:focus{
+      background: transparent;
+      
+  }
+
+}
